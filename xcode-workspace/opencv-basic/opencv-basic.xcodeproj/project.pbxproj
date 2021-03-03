@@ -62,6 +62,8 @@
 		0EF2D08125EF6A5D00D5F05E /* libopencv_ml.4.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF2D04B25EF6A5C00D5F05E /* libopencv_ml.4.5.1.dylib */; };
 		0EF2D08225EF6A5E00D5F05E /* libopencv_img_hash.4.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF2D04C25EF6A5C00D5F05E /* libopencv_img_hash.4.5.1.dylib */; };
 		0EF2D08325EF6A5E00D5F05E /* libopencv_flann.4.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF2D04D25EF6A5C00D5F05E /* libopencv_flann.4.5.1.dylib */; };
+		0EF2D09325EF7D3C00D5F05E /* chapter_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2D09125EF7D3C00D5F05E /* chapter_1.cpp */; };
+		0EF2D09725EF925400D5F05E /* chapter2_basic_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2D09525EF925400D5F05E /* chapter2_basic_functions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,6 +137,10 @@
 		0EF2D04D25EF6A5C00D5F05E /* libopencv_flann.4.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_flann.4.5.1.dylib; sourceTree = "<group>"; };
 		0EF2D08625EF720C00D5F05E /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		0EF2D08825EF79AB00D5F05E /* opencv-basic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "opencv-basic.entitlements"; sourceTree = "<group>"; };
+		0EF2D09125EF7D3C00D5F05E /* chapter_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chapter_1.cpp; sourceTree = "<group>"; };
+		0EF2D09225EF7D3C00D5F05E /* chapter_1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = chapter_1.hpp; sourceTree = "<group>"; };
+		0EF2D09525EF925400D5F05E /* chapter2_basic_functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chapter2_basic_functions.cpp; sourceTree = "<group>"; };
+		0EF2D09625EF925400D5F05E /* chapter2_basic_functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = chapter2_basic_functions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				0EF2D08825EF79AB00D5F05E /* opencv-basic.entitlements */,
+				0EF2D08A25EF7C2500D5F05E /* course */,
 				0EF2CF9725EF46E300D5F05E /* main.cpp */,
 				0EF2D08625EF720C00D5F05E /* info.plist */,
 			);
@@ -290,6 +297,17 @@
 			path = libs;
 			sourceTree = "<group>";
 		};
+		0EF2D08A25EF7C2500D5F05E /* course */ = {
+			isa = PBXGroup;
+			children = (
+				0EF2D09125EF7D3C00D5F05E /* chapter_1.cpp */,
+				0EF2D09225EF7D3C00D5F05E /* chapter_1.hpp */,
+				0EF2D09525EF925400D5F05E /* chapter2_basic_functions.cpp */,
+				0EF2D09625EF925400D5F05E /* chapter2_basic_functions.hpp */,
+			);
+			path = course;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF2CF9825EF46E300D5F05E /* main.cpp in Sources */,
+				0EF2D09725EF925400D5F05E /* chapter2_basic_functions.cpp in Sources */,
+				0EF2D09325EF7D3C00D5F05E /* chapter_1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

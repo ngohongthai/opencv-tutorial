@@ -6,23 +6,19 @@
 //
 
 #include <opencv2/imgcodecs.hpp>
-#include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <iostream>
 
-using namespace cv;
-using namespace std;
-
-
-/////////////////  Images  //////////////////////
+#include "chapter_1.hpp"
+#include "chapter2_basic_functions.hpp"
 
 int main() {
     
-    string path = "Resources/cat.jpg";
-    Mat img = imread(path);
-    imshow("Image", img);
-    waitKey(0);
+//    open_image("Resources/cat.jpg");
+//    open_video("Resources/test_video.mp4");
+//    open_video_from_camera();
+    someBasicFunctionOnImage("Resources/cat.jpg");
     return 0;
     
 }
