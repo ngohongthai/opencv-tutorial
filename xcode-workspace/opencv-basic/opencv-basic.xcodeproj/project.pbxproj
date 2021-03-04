@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EBD89DB25F0C66900354697 /* c3_resize_crop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD89D925F0C66900354697 /* c3_resize_crop.cpp */; };
+		0EBD89DF25F0E2F100354697 /* c4_draw_text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD89DD25F0E2F100354697 /* c4_draw_text.cpp */; };
 		0EF2CF9825EF46E300D5F05E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2CF9725EF46E300D5F05E /* main.cpp */; };
 		0EF2D04E25EF6A5C00D5F05E /* libopencv_freetype.4.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF2D01825EF6A5900D5F05E /* libopencv_freetype.4.5.1.dylib */; };
 		0EF2D04F25EF6A5C00D5F05E /* libopencv_alphamat.4.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF2D01925EF6A5900D5F05E /* libopencv_alphamat.4.5.1.dylib */; };
@@ -79,6 +81,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0EBD89D925F0C66900354697 /* c3_resize_crop.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c3_resize_crop.cpp; sourceTree = "<group>"; };
+		0EBD89DA25F0C66900354697 /* c3_resize_crop.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = c3_resize_crop.hpp; sourceTree = "<group>"; };
+		0EBD89DD25F0E2F100354697 /* c4_draw_text.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c4_draw_text.cpp; sourceTree = "<group>"; };
+		0EBD89DE25F0E2F100354697 /* c4_draw_text.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = c4_draw_text.hpp; sourceTree = "<group>"; };
 		0EF2CF9425EF46E300D5F05E /* opencv-basic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "opencv-basic"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF2CF9725EF46E300D5F05E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0EF2D01825EF6A5900D5F05E /* libopencv_freetype.4.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_freetype.4.5.1.dylib; sourceTree = "<group>"; };
@@ -304,6 +310,10 @@
 				0EF2D09225EF7D3C00D5F05E /* chapter_1.hpp */,
 				0EF2D09525EF925400D5F05E /* chapter2_basic_functions.cpp */,
 				0EF2D09625EF925400D5F05E /* chapter2_basic_functions.hpp */,
+				0EBD89D925F0C66900354697 /* c3_resize_crop.cpp */,
+				0EBD89DA25F0C66900354697 /* c3_resize_crop.hpp */,
+				0EBD89DD25F0E2F100354697 /* c4_draw_text.cpp */,
+				0EBD89DE25F0E2F100354697 /* c4_draw_text.hpp */,
 			);
 			path = course;
 			sourceTree = "<group>";
@@ -365,7 +375,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF2CF9825EF46E300D5F05E /* main.cpp in Sources */,
+				0EBD89DB25F0C66900354697 /* c3_resize_crop.cpp in Sources */,
 				0EF2D09725EF925400D5F05E /* chapter2_basic_functions.cpp in Sources */,
+				0EBD89DF25F0E2F100354697 /* c4_draw_text.cpp in Sources */,
 				0EF2D09325EF7D3C00D5F05E /* chapter_1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
