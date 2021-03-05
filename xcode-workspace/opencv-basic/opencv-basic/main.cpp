@@ -14,7 +14,9 @@
 #include "chapter2_basic_functions.hpp"
 #include "c3_resize_crop.hpp"
 #include "c4_draw_text.hpp"
-
+#include "c5-warp-perspective.hpp"
+#include "c6-color-detection.hpp"
+#include "c7_detect_shape.hpp"
 int main() {
     
 //    open_image("Resources/cat.jpg");
@@ -23,9 +25,21 @@ int main() {
 //    someBasicFunctionOnImage("Resources/cat.jpg");
 //    testResize("Resources/cat.jpg");
 //    testCrop("Resources/cat.jpg");
-    
-    drawShape();
+
+//    Chapter 4: Draw shape and insert text
+//    drawShape();
 //    testText();
+    
+//    Chapter5: Warp perspective (Giống chức năng các app scanner)
+//    testWarpImage("Resources/cards.jpg");
+    
+//    Chapter 6: Color detection
+//    testColorDetection("Resources/shapes.png");
+    
+//    Chapter 7: Detect shape
+    testDetectShape("Resources/shapes.png");
+    
+    
     return 0;
     
 }

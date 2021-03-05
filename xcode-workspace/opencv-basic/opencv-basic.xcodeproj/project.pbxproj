@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E98525925F20FFE0024F595 /* c5-warp-perspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E98525725F20FFE0024F595 /* c5-warp-perspective.cpp */; };
+		0E98525D25F215EE0024F595 /* c6-color-detection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E98525B25F215EE0024F595 /* c6-color-detection.cpp */; };
+		0E98526125F236AB0024F595 /* c7_detect_shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E98525F25F236AB0024F595 /* c7_detect_shape.cpp */; };
 		0EBD89DB25F0C66900354697 /* c3_resize_crop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD89D925F0C66900354697 /* c3_resize_crop.cpp */; };
 		0EBD89DF25F0E2F100354697 /* c4_draw_text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD89DD25F0E2F100354697 /* c4_draw_text.cpp */; };
 		0EF2CF9825EF46E300D5F05E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2CF9725EF46E300D5F05E /* main.cpp */; };
@@ -81,6 +84,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E98525725F20FFE0024F595 /* c5-warp-perspective.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "c5-warp-perspective.cpp"; sourceTree = "<group>"; };
+		0E98525825F20FFE0024F595 /* c5-warp-perspective.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "c5-warp-perspective.hpp"; sourceTree = "<group>"; };
+		0E98525B25F215EE0024F595 /* c6-color-detection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "c6-color-detection.cpp"; sourceTree = "<group>"; };
+		0E98525C25F215EE0024F595 /* c6-color-detection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "c6-color-detection.hpp"; sourceTree = "<group>"; };
+		0E98525F25F236AB0024F595 /* c7_detect_shape.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c7_detect_shape.cpp; sourceTree = "<group>"; };
+		0E98526025F236AB0024F595 /* c7_detect_shape.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = c7_detect_shape.hpp; sourceTree = "<group>"; };
 		0EBD89D925F0C66900354697 /* c3_resize_crop.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c3_resize_crop.cpp; sourceTree = "<group>"; };
 		0EBD89DA25F0C66900354697 /* c3_resize_crop.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = c3_resize_crop.hpp; sourceTree = "<group>"; };
 		0EBD89DD25F0E2F100354697 /* c4_draw_text.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c4_draw_text.cpp; sourceTree = "<group>"; };
@@ -314,6 +323,12 @@
 				0EBD89DA25F0C66900354697 /* c3_resize_crop.hpp */,
 				0EBD89DD25F0E2F100354697 /* c4_draw_text.cpp */,
 				0EBD89DE25F0E2F100354697 /* c4_draw_text.hpp */,
+				0E98525725F20FFE0024F595 /* c5-warp-perspective.cpp */,
+				0E98525825F20FFE0024F595 /* c5-warp-perspective.hpp */,
+				0E98525B25F215EE0024F595 /* c6-color-detection.cpp */,
+				0E98525C25F215EE0024F595 /* c6-color-detection.hpp */,
+				0E98525F25F236AB0024F595 /* c7_detect_shape.cpp */,
+				0E98526025F236AB0024F595 /* c7_detect_shape.hpp */,
 			);
 			path = course;
 			sourceTree = "<group>";
@@ -374,10 +389,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E98525925F20FFE0024F595 /* c5-warp-perspective.cpp in Sources */,
+				0E98525D25F215EE0024F595 /* c6-color-detection.cpp in Sources */,
 				0EF2CF9825EF46E300D5F05E /* main.cpp in Sources */,
 				0EBD89DB25F0C66900354697 /* c3_resize_crop.cpp in Sources */,
 				0EF2D09725EF925400D5F05E /* chapter2_basic_functions.cpp in Sources */,
 				0EBD89DF25F0E2F100354697 /* c4_draw_text.cpp in Sources */,
+				0E98526125F236AB0024F595 /* c7_detect_shape.cpp in Sources */,
 				0EF2D09325EF7D3C00D5F05E /* chapter_1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,7 +21,7 @@ void someBasicFunctionOnImage(string path) {
      https://thigiacmaytinh.com/lam-min-anh-smoothing/
      https://docs.opencv.org/2.4/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.html#gaussian-filter
      */
-    GaussianBlur(img, imgBlur, Size(3,3), 3,0);
+    GaussianBlur(imgGray, imgBlur, Size(3,3), 3,0);
     
     /**
      Canny detection:
