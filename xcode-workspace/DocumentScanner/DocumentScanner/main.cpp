@@ -13,7 +13,7 @@
 using namespace cv;
 using namespace std;
 
-Mat imgOriginal, imgGray, imgBlur ,imgCanny, imgThre, imgDilation, imgWarp;
+Mat imgOriginal, imgGray, imgBlur ,imgCanny, imgThre, imgDilation, imgWarp, imgCrop;
 // initial Points là khi hàm getContours return ra, nó có thể không đúng thứ tự trên dưới trái phải
 // lúc này ta cần 1 hàm để reorder lại các điểm theo thứ tự mong muốn và lưu chúng vào docsPoints
 vector<Point> initialPoints, docPoints;
@@ -135,7 +135,7 @@ int main() {
     imgOriginal = imread(path);
     
     //Mục đích là làm cho ảnh nhỏ hơn, dễ test và debug, sau khi hoàn thành sẽ remove để đảm bảo chất lượng.
-    resize(imgOriginal, imgOriginal, Size(), 0.5, 0.5);
+    //resize(imgOriginal, imgOriginal, Size(), 0.5, 0.5);
     
     //Bước tiếp theo là preprocessing ảnh, chuyển đổi ảnh sang Gray, làm mờ bằng GaussianBlur, sau đó dùng Canny để detect cạnh.
     imgThre = preprocessing(imgOriginal);
@@ -149,11 +149,18 @@ int main() {
     //Từ 4 điểm xử lý để được hình ảnh nhìn từ trên xuống như khi scan
     imgWarp = getWarp(imgOriginal, docPoints, width, height);
     
+    //Chỉnh sửa 1 số phần bị đen phía trên top
+    int cropVal = 10;
+    Rect roi(cropVal, cropVal, width - (2 * cropVal), height - (2 * cropVal));
+    imgCrop = imgWarp(roi);
     
     imshow("imgOriginal", imgOriginal);
     imshow("imgDil", imgThre);
     imshow("imgWarp", imgWarp);
+    imshow("imgCrop", imgCrop);
     waitKey(0);
     return 0;
+    
+    //TODO: - Using camera for realtime scanner
     
 }
